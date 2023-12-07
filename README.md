@@ -70,4 +70,4 @@ Contribuições são bem-vindas! Se encontrar bugs ou tiver sugestões de melhor
 
 ## Autor
 Luis Fernando de Albuquerque Figueiredo
-https://github.com/euluisdev/mario-scss
+[https://github.com/euluisdev/tasks-list](https://github.com/euluisdev/tasks-list)
