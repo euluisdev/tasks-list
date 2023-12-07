@@ -68,4 +68,6 @@ para criar uma interface moderna e responsiva.
 
 Contribuições são bem-vindas! Se encontrar bugs ou tiver sugestões de melhorias, críticas construtivas, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-
+## Autor
+Luis Fernando de Albuquerque Figueiredo
+https://github.com/euluisdev/mario-scss
