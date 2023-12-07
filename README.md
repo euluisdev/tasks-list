@@ -5,6 +5,20 @@ A simple task-list web application built with vite/REACT and Material-UI.
 
 Uma aplicação web de Lista de Tarefas simples construída com vite/REACT e Material-UI.
 
+## Licença
+Este projeto está sob a Licença MIT.
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/euluisdev/mario-scss/blob/master/LICENSE)
+
+## Tecnologias Utilizadas
+- React
+- Material=UI
+- HTML
+- CSS
+- JavaScript
+
+## Pré-requisitos
+- Nenhum, basta um navegador da web moderno.
+
 ## Sumário
 - [Visão Geral](#visão-geral)
 - [Funcionalidades](#funcionalidades)
