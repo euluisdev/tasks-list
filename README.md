@@ -7,7 +7,7 @@ Uma aplicação web de Lista de Tarefas simples construída com vite/REACT e Mat
 
 ## Licença
 Este projeto está sob a Licença MIT.
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/euluisdev/mario-scss/blob/master/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/euluisdev/tasks-list/blob/master/LICENSE)
 
 ## Tecnologias Utilizadas
 - React
@@ -68,6 +68,4 @@ para criar uma interface moderna e responsiva.
 
 Contribuições são bem-vindas! Se encontrar bugs ou tiver sugestões de melhorias, críticas construtivas, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-## Licença
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE). Consulte o arquivo `LICENSE` para obter mais detalhes.
