@@ -1,0 +1,8 @@
+@import './Home.css';
+@import './Form.css';
+@import './TodoItem.css';
+@import './EditeDialog.css';
+
+body {
+    background-color: gainsboro;
+}

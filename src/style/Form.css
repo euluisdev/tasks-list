@@ -1,0 +1,8 @@
+.formContainer {
+    padding: 1em;
+}
+
+.formContente {
+    display: flex;
+    justify-content: center;
+}
