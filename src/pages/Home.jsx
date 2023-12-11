@@ -1,5 +1,5 @@
 import { Container, List } from '@mui/material';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from '../components/Form';
 import TodoItem from '../components/TodoItem';
 
@@ -8,7 +8,10 @@ const Home = () => {
 
     //this adds a new task to the  'todos' state
     const addTask = (item) => {
-        setTodos([item, ...todos]);
+        
+        //  using current time as unique ID
+        const newItem = { id: new Date().getTime(), text: item.text };
+        setTodos([newItem, ...todos]);
     };
 
     //deletes a task based on the ID
@@ -25,6 +28,18 @@ const Home = () => {
             )
         );
     };
+
+    //effect for saving and loading data from localStorage
+    useEffect(() => {
+        const storedTodos = JSON.parse(localStorage.getItem('todos')) || [];
+        if (storedTodos.length > 0) {
+            setTodos(storedTodos);
+        };
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('todos', JSON.stringify(todos));
+    }, [todos]);
 
     //render
     return (

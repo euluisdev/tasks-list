@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
+/* import * as React from 'react'; */
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -17,8 +18,16 @@ const TodoItem = ({ item, deleteTask, editeTask }) => { //inport props unstructu
     setOpenDialog(!openDialog);
   };
 
+  // effect for saving and loading data from localStorage
+  useEffect(() => {
+    const storedChecked = JSON.parse(localStorage.getItem(`isChecked-${item.id}`)) || false;
+    setIsChecked(storedChecked);
+  }, [item.id]);
+
   const handleCheckboxChange = () => {
-    setIsChecked(!isChecked); // inverte o estado do checkbox
+    const newChecked = !isChecked; // invert the checkbox state
+    setIsChecked(newChecked);
+    localStorage.setItem(`isChecked-${item.id}`, JSON.stringify(newChecked));
   };
 
   return (
@@ -38,15 +47,17 @@ const TodoItem = ({ item, deleteTask, editeTask }) => { //inport props unstructu
               <Checkbox
                 edge="start"
                 tabIndex={-1}
-                disableRipple 
-                checked={isChecked} 
-                onChange={handleCheckboxChange} 
+                disableRipple
+                checked={isChecked}
+                onChange={handleCheckboxChange}
               />
             </ListItemIcon>
-            <ListItemText 
+            <ListItemText
               className='itemText'
-              primary={item.text} 
-              onClick={() => setOpenDialog(true)} style={{ textDecoration: isChecked ? 'line-through' : 'none' }} />
+              primary={item.text}
+              onClick={() => setOpenDialog(true)} 
+              style={{ textDecoration: isChecked ? 'line-through' : 'none' }} 
+            />
           </ListItemButton>
         </ListItem>
       </Paper>
