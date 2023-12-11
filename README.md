@@ -15,6 +15,7 @@ Este projeto está sob a Licença MIT.
 - HTML
 - CSS
 - JavaScript
+- LocalStorage
 
 ## Pré-requisitos
 - Nenhum, basta um navegador da web moderno.
@@ -36,6 +37,7 @@ para criar uma interface moderna e responsiva.
 ## Funcionalidades
 
 - **Adicionar Tarefas:** Permite aos usuários adicionar novas tarefas à lista.
+- **LocalStorage:** As tarefas ficam salvas no LocalStorage, assim, não se perde as tarefas ao atualizar seu navegador.
 - **Excluir Tarefas:** Permite aos usuários remover tarefas da lista.
 - **Editar Tarefas:** Oferece a capacidade de editar o texto de uma tarefa existente, clicando na própria tarefa.
 - **Marcar como Concluída:** Permite marcar tarefas como concluídas, exibindo um efeito de riscado no texto.
